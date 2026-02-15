@@ -64,8 +64,8 @@
     - 種別
       - common
       - hq
-      - front
-      - back
+      - app
+      - inf
   - 参考資料  
     - [Markdown記法と書き方](https://help.docbase.io/posts/13697)  
     - [Mermaid (マーメイド) 記法と書き方](https://help.docbase.io/posts/3719897)
@@ -106,7 +106,7 @@
     ただし、急用により直前欠席となり調整できない場合は、会議内で当番を改めて決定する。  
     次回書記当番については会議の終盤に決定する。
 ## 組織体
-  本プロジェクトについては、プロジェクト方針、タスク管理、実行、運営を実施する運営メンバーと各チームでプロジェクトの見学、協力を実施するプロジェクトメンバーに分かれる。
+  本プロジェクトについては、プロジェクト方針、タスク管理、実行、運営を実施する運営メンバー、各チームでプロジェクトの見学、協力を実施するプロジェクトメンバー、プロジェクト進行時の相談役であるアドバイザーに分かれる。
 ### 運営メンバー  
 ※敬称は省略いたします。  
   - パプ
@@ -116,6 +116,12 @@
   - しぃぃ
   - にしな
   - 鯖  
+  - ちょーろー
+  - けとる
+### アドバイザー
+※敬称は省略いたします。  
+  - シモモンモ
+  - DD
 ### プロジェクトメンバー
 
 ### チーム
@@ -139,23 +145,23 @@
       │
       └── headquarters
       ```
-  - フロントエンド  
+  - アプリ開発  
     機能要件に則ったアプリケーションの開発を行う。  
     - 成果物保管場所  
       GitHubでの成果物保管場所については、下記ディレクトリを使用する。  
       ディレクトリの修正があった場合、随時更新を行うこと。  
       ```
       │
-      └── front-end
+      └── apptm
       ```
-  - バックエンド  
+  - インフラ  
     非機能要件に則った基盤の開発を行う。  
     - 成果物保管場所  
       GitHubでの成果物保管場所については、下記ディレクトリを使用する。  
       ディレクトリの修正があった場合、随時更新を行うこと。  
       ```
       │
-      └── back-end
+      └── infrastructuretm
       ```
 ### 組織図
 ```mermaid
@@ -174,25 +180,32 @@ flowchart TD
     end
   end
 
-  subgraph Front[フロントエンド]
-    subgraph Front-End-classification[運営メンバー]
-      Front-End-Member1[パプ]
-      Front-End-Member2[たけのこ]
-      Front-End-Member3[しぃぃ]
+  subgraph App[アプリ開発]
+    subgraph App-classification[運営メンバー]
+      App-Member1[パプ]
+      App-Member2[たけのこ]
+      App-Member3[しぃぃ]
+      App-Member4[ちょーろー]
+      App-Member5[けとる]
     end
   end
 
-  subgraph Back[バックエンド]
-    subgraph Back-End-classification[運営メンバー]
-      Back-End-Member1[パプ]
-      Back-End-Member2[Aki]
-      Back-End-Member3[にしな]
-      Back-End-Member4[鯖]
-      Back-End-Member5[nakata]
+  subgraph infrastructure[インフラ]
+    subgraph infrastructure-classification[運営メンバー]
+      infrastructure-Member1[パプ]
+      infrastructure-Member2[Aki]
+      infrastructure-Member3[にしな]
+      infrastructure-Member4[鯖]
+      infrastructure-Member5[nakata]
     end
   end
+  subgraph Adviser[アドバイザー]
+      Adviser-Member1[シモモンモ]
+      Adviser-Member2[DD]
+  end
+  
   PM ----- HQ
-  PM ----- Front
-  PM ----- Back
+  PM ----- App
+  PM ----- infrastructure
 
 ```
