@@ -61,9 +61,15 @@
 
 ## 成果物
 GitHubとGoogleDriveで管理しています
+### プロジェクト全体
 - https://github.com/itstudy-jp/PPPJ
 - https://drive.google.com/drive/folders/15kyKVFbcV1Hc0jRukYWack_ae2QFWN2W?usp=drive_link
 
+### インフラ
+- （準備中）
+
+### 開発
+- https://github.com/geek-town-japan
 
 ## 利用ツール
 - GitHub  
